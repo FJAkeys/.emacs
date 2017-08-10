@@ -1,0 +1,815 @@
+#+STARTUP: overview
+#+TAGS: data_analysis(a) R(r)  emacs(e) python(p) daily(d) books(b) finance_and_market(f) 
+#+TAGS: none_tech(n) linux(u)  test(t) meta_learning(m) pure_mind_record(j)  hacker(h)
+#+TAGS: very_important(v) chore(c) reorganize(o) check_list(l) web_build(w) entrepreneurship(i)
+#+SEQ_TODO: TODO(T@/!) WFDATE(W@/!) | DONE(D@/!) CANCELED(C@/!)
+#+COLUMNS: %10ITEM  %10PRIORITY %15TODO %65TAGS
+
+
+* 常用快速索引
+  [[out_door][出门必备]]
+
+* DATE <2016-09-02 五>
+** DONE org-mode learning                                             :emacs:
+   CLOSED: [2016-09-02 五 15:14]
+   - State "DONE"       from "TODO"       [2016-09-02 五 15:14]
+     官方文档很全面，有什么问题优先去官方文档看。
+   - State "TODO"       from ""           [2016-09-02 五 14:47]
+*** links:
+
+    [[http://orgmode.org/org.html][官方网站]]
+    [[http://blog.csdn.net/u014801157/article/details/24372485]]
+    [[http://i.linuxtoy.org/docs/guide/ch32.html]]
+    [[http://emacser.com/org-mode-yupeng.htm]]
+    [[http://www.cnblogs.com/holbrook/archive/2012/04/12/2444992.html#sec-4-1]]
+    [[http://www.cnblogs.com/qlwy/archive/2012/06/15/2551034.html#fnr.1]]
+*** TODO 元数据块的快速插入和高亮
+    - State "TODO"       from ""           [2016-09-09 五 13:28] \\
+      有更多链接资料可以查看。
+**** links:
+     [[http://www.cnblogs.com/bamanzi/p/org-mode-tips.html]]  HERE WE GO!!!!!!!!!!!!!!!
+     [[http://wenshanren.org/?p=327]]
+**** points:
+     快速输入元数据块，<s 出现_SRC，类似的<e 出现_EXAMPLE。
+     使用「#+BEGIN/END_SRC」创建代码块，在配置文件中添加「(setq org-src-fontify-natively t)」,高亮代码块里的内容。
+     
+*** Checkboxes
+    #+BEGIN_SRC org-mode
+     * TODO Organize party [2/4]  ##or [%] to present percents.
+       - [-] call people [1/3]
+         - [ ] Peter    ## M-S-<RET> to insert a new item with a checkbox.
+         - [X] Sarah   ##with C-c C-c here you can change status between [] and [X].
+         - [ ] Sam
+       - [X] order food
+       - [ ] think about what music to play
+       - [X] talk to the neighbors
+    
+    #+END_SRC
+    
+*** TODO Dates and times
+    - State "TODO"       from ""           [2016-09-09 五 22:19] \\
+      慢慢看官方文档。
+    
+*** 标签搜索： 
+
+    一旦建立好了标签系统，就能够把标签相关的信息收集到一个特殊的列表中。
+
+    *C-c / m* 或 C-c \\                                 org-match-sparse-tree
+    创建一个包含搜索的标签的简要标题树。 有 *C-u* 前缀时，忽略不是 TODO 的标题栏。
+
+    C-c a m                                           org-tags-view
+    创建一个在所有议程文件中符合搜索的标签的标题列表。参见 [[Matching tags and properties]]
+
+    C-c a M                                           org-tags-view
+    创建一个在所有议程文件中符合搜索的标签的标题列表，但是仅仅检查 TODO 项并且强制检查子标题
+    （见 org-tags-match-list-sublevels ）。这些命令都会提示一个搜索字符串，并且允许常见的逻辑操作，
+    比如 '+boss+urgent-project1' 会查找包含 'boss' 和 'urgent' 但不包含 'project1' 的标题，又比如 
+    'Kathy|Sally' 会查找包含 'Kathy' 或 'Sally' 的标题。搜索字符串支持非常多的格式，并且允许根据 
+    TODO 关键字、标题级别和属性等进行过滤。[[Matching tags and properties]] 有很多的例子和说明。
+*** Quick tips:
+**** 操作：
+     M-RET 插入同级标题
+     C-c C-c 加标签
+     C-c C-t 加任务属性
+     C-c C-o 打开链接
+     C-c C-e 导出
+     C-c .  插入时间戳
+     C-u C-c . 插入时间精确到分
+**** 字体格式：
+     | name | code | 表格
+     *abc粗体*
+     /abc斜体/
+     _abc下划线_
+     =abc等宽字=
+     
+* DATE <2016-09-03 六>
+** booksheet:
+*** TODO 高频交易                                  :books:finance_and_market:
+    - State "TODO"       from ""           [2016-09-03 六 16:45] \\
+      一点点推进，不懂google拓展，模型算法要清楚。
+**** 资讯:
+**** 笔记及摘录:
+**** 总结:
+*** TODO 经济学的思维方式             :books:finance_and_market:none:tech(n):
+    - State "TODO"       from ""           [2016-09-03 六 17:00] \\
+      书单介绍，种草。
+**** 资讯:  
+     保罗_海恩……|史晨|机械工业出版社|”最适合非经济学专业学生的经济学教材“
+**** 笔记及摘录：
+**** 总结:
+
+* DATE <2016-09-04 日>
+** TODO emacs插件管理工具 el-get                                      :emacs:
+   - State "TODO"       from ""           [2016-09-04 日 15:05] \\
+     以后统一管理emacs插件，方便扩展，避免冲突。
+ 
+*** links:
+    [[https://github.com/dimitri/el-get]]
+
+** DONE [#A] YASnippet模块补全                                        :emacs:
+   CLOSED: [2016-09-05 一 12:00]
+   - State "DONE"       from "TODO"       [2016-09-05 一 12:00] \\
+     暂时结束，日后快捷键或代码段可以逐渐补充。
+   - State "TODO"       from ""           [2016-09-04 日 15:13] \\
+     TAB键或功能快捷键补全常用代码块，非常实用，安装配置略麻烦。
+*** links:
+    [[https://github.com/joaotavora/yasnippet]]
+    [[http://joaotavora.github.io/yasnippet/snippet-development.htm]]l
+    [[http://blog.waterlin.org/articles/emacs-yasnippet-basic-usage.html]]
+*** 配置代码:
+    见.emacs.d/init.el
+*** 操作:
+    M-x yas-new-snippet 编写新的snippet，C-x C-w 存为新文件，注意对应模式保存与对应文件夹。
+    TAB / C-i  自动拓展插入，建议实用C-i，避免误触。
+    M-x yas-visit-snippet-file 查看更改已有的snippet文件。
+** emacs原始快捷键备忘                               :emacs:daily:reorganize:
+*** it goes:
+    C-x C-b 查看buffer打开状态
+    C-x C-w 另存为命令
+    C-x k kill一个buffer
+    C-w 剪切  M-w 复制
+    C-y 粘贴
+    C-s 查找文本
+    M-% 查找并替换
+    C-x u 撤销
+    C-g C-x u 向前撤销(撤销撤销过的)
+* DATE <2016-09-05 一>
+** ubuntu linux命令备忘                                         :daily:linux:
+*** it goes:
+    mv A B 将目录A重命名为B
+    mv /a /b/c 将/a目录移动到/b目录下，并重命名为c
+    tar -zxf & tar -czf
+** booksheets:
+*** TODO R语言实战                                    :data_analysis:R:books:
+    - State "TODO"       from ""           [2016-09-05 一 21:46] \\
+      全而厚的一本书，实战系列，对实践和理论都有完整的讲解，非常期待。
+**** 资讯:
+     Robert I. Kabacoff | 王小宁等 | 人民邮电出版社 | 作者网站: [[http://www.statmethods.net]]
+**** 笔记及摘录:
+     <2016-09-05 一> 
+     例子代码可以从两个地方下载到:[[http://manning.com/RinAction][manning]] 以及 [[https://www.github.com/kabacoff/RiA2][github]] .
+     为何要使用R:R免费，平台全面，可视化表现强，导入数据方便，模型易于扩展，可与多种脚本语言整合。
+     「R学习曲线陡峭」 s:所以才有学习的价值，能在最短的时间内掌握最不可复制的技能，然而这个论点的前提是什么呢，哈哈～
+     
+**** 总结:
+
+*** TODO 穷查理宝典                      :books:finance_and_market:none_tech:
+    - State "TODO"       from ""           [2016-09-05 一 22:24] \\
+      小老头讲解投资者的优秀品质，有关于生活，学习，家庭甚至世界观的各方各面。
+**** 资讯:
+**** 笔记及摘录:
+**** 总结:
+* DATE <2016-09-06 二>
+      
+** TODO pdb ipdb pudb...以及python的debug技巧                   :python:test:
+   - State "TODO"       from ""           [2016-09-06 二 14:31] \\
+     再也不要print啦，python有良好的debug环境。
+     其中pudb是自带简易界面的debugger，要是喜欢漂亮UI和高度集成的IDE，可以考虑pyChorm。
+*** pdb和ipdb
+*** pudb
+*** debugger & debugging
+* DATE <2016-09-07 三>
+** booksheet(匠人精神系列推荐)
+*** TODO 匠人                                               :books:none_tech:
+    - State "TODO"       from ""           [2016-09-07 三 16:39] \\
+      阐述纯粹为了把事情做好而好好工作的欲望这样的人性冲动。
+      「只要拥有为了把事情做好而把事情做好的愿望，我们每个人都是匠人。」
+**** 资讯:
+     理查德_桑内特 (美)| 李继宏 | 上海译文出版社 
+**** 笔记及摘录:
+**** 总结:
+*** TODO 造物有灵且美                                       :books:none_tech:
+    - State "TODO"       from ""           [2016-09-07 三 16:49] \\
+      「真正的造物者总是从容的，没有愚昧的执着，而是对着生活随波逐流。造物者的内心大都纯粹，所以才有一份手作的坚持。」
+**** 资讯:
+     赤木明登 (日) | 蕾克 | 浦睿文化/湖南美术出版社
+**** 笔记及摘录:
+     <2016-09-07 三>
+     「我只是从日常生活中理所当然的事开始做而已。不勉强自己，不为难自己，慢慢地一心一意做好当下力所能及的事就好。和到手的丝线与布匹面对面、心对心就好。」
+     <2016-09-22 四>
+     「每一段故事诞生的地方，都有一种美的存在。我们与其邂逅，被其触动，心生涟漪，新的故事便随之诞生。」
+     「能抵达美之真谛的，只有人。造物本身，在人创造出的不完美中坚持存在这件事，就是活着。」
+     「人活着，需要找到一条与大世界相通的路径，也需要被路径里诞生的各种故事支撑。如果我们都闭上眼睛，捂住耳朵，屏住呼吸，使全身僵硬，不去触摸世界，那故事就无法开始。」
+     「对我来说，好用就是一种艺术感。」
+     「我觉得你的设计，不是用头脑构思出来的，而是有种亲手做过无数衣服的裁衣匠特有的素手出精品的感觉，好像是在手的触摸过程中诞生而来的。」
+**** 总结:
+*** TODO 纸上中洲                                           :books:none_tech:
+    - State "TODO"       from ""           [2016-09-07 三 18:31] \\
+      「我们画了这么多素描，一点一滴设定全盘。到最后，它化为绝对真实。」
+      魔戒中土世界插画集
+**** 资讯:
+     艾伦_李 (英) | 黄丽媛 | 世纪文景出版社
+**** 笔记及摘录:
+**** 总结:
+*** TODO 寻访行家                                           :books:none_tech:
+    - State "TODO"       from ""           [2016-09-07 三 18:37] \\
+      「人们对自己说，即使我不这么做，也会有人这么做的。我想这句话应该这么说:谁也不做才真正没人做。」
+**** 资讯:
+     加布里艾勒_格特勒 | 丁娜等 | 三联书店
+**** 笔记及摘录:
+**** 总结:
+* DATE <2016-09-08 四>
+** booksheet:
+*** TODO 京都古书店风景                                     :books:none_tech:
+    - State "TODO"       from ""           [2016-09-08 四 10:16] \\
+      「自己的心意，只要能传达出去，哪怕仅有一个人领会，就觉满足。」
+**** 资讯:
+     苏枕书 | 中华书局
+**** 笔记及摘录:
+     <2016-09-10 六>
+     -「印刷文化不论盛衰，都取决于读者的态度。好书被售卖也好，流往古本屋也罢，皆由读者决定。
+     再换句话说，给阅读好书的人们以金钱和时间，是最重要的文化振兴策略。
+     人们将之视为消费品用之即弃，那么也很难孕育出什么文化来。」--《古本屋盛衰记》|宫崎市定
+     -
+**** 总结:
+
+*** TODO 疯狂的简洁                                         :books:none_tech:
+    - State "TODO"       from ""           [2016-09-08 四 14:39] \\
+      Less is more.
+**** 资讯:
+     肯_西格尔 | 北京联合出版社
+**** 笔记及摘录:
+**** 总结:
+
+*** TODO 精要主义
+    - State "TODO"       from ""           [2016-09-08 四 14:45] \\
+      有关于选择，甄别和取舍。
+**** 资讯:
+     格雷戈_麦吉沃尔 | 浙江人名出版社
+**** 笔记及摘录:
+     <2016-09-26 一>
+     「伟大的设计能让我们跳出复杂、冗余和混乱，实现简单、明晰和有意义。产品设计如此，人生设计也莫不如是。」
+     
+**** 总结:
+** check_list_today:
+*** out door workdays:                               :daily:chore:check_list:
+    #<<out_door>>
+    D for Date 
+**** 手机(充电器、耳机) D
+**** 钱包(现金、卡、证件) D
+**** 狗牌
+**** 电脑(外设、充电器)
+**** 所需书
+**** 护肤品
+**** 钥匙(单位衣柜，家门、车、备用钩) D
+**** 文具(中性笔铅笔、美工刀、便签纸、书签贴) D
+**** 换洗衣物、鞋、工作外套
+**** 洗漱用品(面部、洗发沐浴、毛巾、吹风)
+**** 装扮(手表、手链、吊坠、香水) D
+**** 工作资料
+**** 他人委托物 D
+**** 检查: D
+     洗脸，洗头，洗澡，刷牙，剪指甲，剃胡须，剪鼻毛，掏耳朵，修眉，化妆
+** TODO emacs与mobile_org链接                          :emacs:very_important:
+   - State "TODO"       from ""           [2016-09-08 四 10:38] \\
+     尝试与服务器同步，在手机上使用org_mode。
+*** links:
+    [[http://darksun.blog.51cto.com/3874064/1302920/]]
+    [[http://tieba.baidu.com/p/3406517032]]
+    [[https://www.emacswiki.org/emacs/mobileorg]]
+    [[https://github.com/matburt/mobileorg-android/]]
+    [[http://mobileorg.ncogni.to/]]
+    [[http://blog.csdn.net/yaosongyuan/article/details/9185777]]
+*** 配置代码:
+*** 操作:
+* DATE <2016-09-09 五>
+** TODO GTD时间管理系统学习                                   :meta_learning:
+   - State "TODO"       from ""           [2016-09-09 五 13:46] \\
+     Getting Things Done 无积压工作时间管理，强化心流。
+     [[http://www.mifengtd.cn/articles/start-gtd.html]]
+*** 「尽管去做-无压工作的艺术」               :books:none_tech:meta_learning:
+**** 资讯:
+**** 笔记及摘录:
+     <2016-09-10 六>
+     -GTD方法目的：
+      1.抓住所有一切需要处理的事情，把他们统统置入一个脱离大脑的逻辑系统中。
+      2.训练自己在接受一切「输入信息」的前期作出决定。(?)
+     -problem:几乎每一件事情都可能处理得更加完善，而且现在促成这一切成为现实的信息已数不胜数、唾手可得。
+     -关注价值观并不会使你的生活变得简单。它阐明意义，指导方向，而且带来更多复杂的情况。
+     -集中精力对付主要的成果和价值观是至关重要的，但这只是牌局中的赌注提高了，还必须一如既往的玩下去。
+     -「缺乏洞察力，生活就会拒绝你。无论是擦窗户还是撰写宏篇巨著都是如此。」--Nadia_Boulanger
+     -荡秋千与划船的洞察
+     -「如果你的大脑中空空如也，总是处于一切就绪的状态，它就会向一切事情敞开大门。」--Shunryu_Suzuki
+     -事件占据，就会思维受阻。未解决事件形成精神能量的潜在消耗源。
+     -「像实干家一样思考问题，像思想家一样付诸行动。」--Henry_Bergson
+     -材料(stuff):任何进入你的精神或现实世界中但尚未找到归属的事情，所有你尚未推理出理想的解决方法和下一步具体行动的事情。
+     
+**** 总结:
+* DATE <2016-09-14 三>
+** TODO wifi-cracker on ubuntu                                       :hacker:
+   - State "TODO"       from ""           [2016-09-14 三 17:56] \\
+     以后免费蹭网就靠这个了，需要买一个专用无线网卡TP-Link WN722N。
+** booksheet:
+*** TODO 数据科学与大数据分析                         :data_analysis:R:books:
+    - State "TODO"       from ""           [2016-09-14 三 23:48] \\
+      超专业的感觉。
+**** 资讯:
+     EMC Education Service | 曹逾等 | 人民邮电出版社
+**** 笔记及摘录:
+     <2016-09-14 三>
+     商业智能BI和数据科学DS的区别
+     「商业智能主要是提供一些事后见解和观点，一般用于解释事件发生的‘时间’和‘地点’。
+     相比之下，数据科学主要是用更有前瞻性和探索性的方式来使用分类数据，着重分析当前的情况，
+     为未来的决策提供数据参考。」
+     <2016-09-15 四>
+     数据科学家的任务: 
+     1.将业务的挑战转化为分析的问题
+     2.设计、实施、部署大数据的统计模型和数据挖掘技术
+     3.产生能被用于指导实践的洞见
+     特征需求:
+     量化分析能力、技术能力、怀疑性和批判性思维、好奇心和创造力、沟通和协作能力
+     项目角色:(p25)
+     业务用户、项目发起人、项目经理、商业智能分析师、数据工程师、数据库管理员、数据科学家
+     5个流程框架和6个周期阶段(p26)
+**** 总结:
+** DONE 搭建微信公众号
+   CLOSED: [2016-09-14 三 23:01]
+   - State "DONE"       from "TODO"       [2016-09-14 三 23:01] \\
+     帐号为jakeys@foxmail.com，密码tutu0824。
+   - State "TODO"       from ""           [2016-09-14 三 22:59] \\
+     微信端已申请好，基本功能可以正常使用。进一步研究开发待定。
+** idea today:
+*** TODO 服装大数据--潮流领先预测参考，独特穿搭智能推荐 :data_analysis:pure_mind_record:reorganize:
+    - State "TODO"       from ""           [2016-09-14 三 23:40] \\
+      先找找可用的数据源。
+*** TODO 位置及路径信号采集与分析 :data_analysis:pure_mind_record:reorganize:
+    - State "TODO"       from ""           [2016-09-14 三 23:42] \\
+      有点启示，想想地下停车场寻车系统。
+
+   「零售商店，通过购物车中带有的RFID芯片追踪消费者的购物路线，利用RFID芯片中
+   收集的地理空间数据可以分析出哪些商品吸引啦最多人驻足关注。」--《数据科学与大数据分析》
+* DATE <2016-09-15 四>
+** CANCELED 摄影及修图学习
+   CLOSED: [2016-10-16 日 18:18]
+   - State "CANCELED"   from ""           [2016-10-16 日 18:18] \\
+     需求终止，计划废弃。
+*** 摄影
+*** 修图
+**** pola修图，以及关于基础指标、控制量的学习
+* DATE <2016-09-22 四>
+** TODO flask建站                                          :python:web_build:
+   - State "TODO"       from ""           [2016-09-22 四 19:29] \\
+     学习用flask框架搭建网页和应用，直接把工作室主页作为实战项目。
+*** 记录
+    <2016-09-22 四>
+    记得项目开始前使用virtualenv和git。
+    「项目文件夹不是一个 Python 的包，只是我们放置文件的地方。 
+    在接下来的步骤中我们会直接把数据库模式和主模块放在这个文件夹中。
+    应用的用户可以通过 HTTP 访问static文件夹中的文件。
+    这里也是css和javascript文件的存放位置。
+    Flask 将会在templates文件夹中寻找Jinja2 模版。」
+    初期项目文件tree:
+    main--app--__init__.py
+             --static
+             --templates--index.html
+             --view.py
+        --run.py
+
+    模板中可以使用各种循环语句和条件语句。
+    可以使用继承(套取另一个代码块)的方式达到模板层面的重用。
+    表单:
+    用来采集用户输入的部分，包括三部分，表单标签，表单域和表单按钮。
+    使用插件Flask_WTF
+    
+    
+
+** TODO bootstrap学习(含HTML,CSS,JavaScript)                      :web_build:
+   - State "TODO"       from ""           [2016-09-22 四 20:22] \\
+     前端搭建，不过bootstrap貌似有很多可视化布局的工具，以后做起来应该是特别方便。
+
+* DATE <2016-09-26 一>
+** booksheet:
+*** TODO 耶路撒冷三千年                                     :books:none_tech:
+    - State "TODO"       from ""           [2016-09-26 一 20:17] \\
+      曾经的世界中心，这本书感觉很好看的样子。
+**** 资讯:
+     西蒙(英) | 马丹静等 | 民主与建设出版社
+**** 笔记及摘录:
+**** 总结:
+
+*** TODO 精益创业                                    :books:entrepreneurship:
+    - State "TODO"       from ""           [2016-09-27 二 22:14] \\
+      启动与成长的基本框架。
+**** 资讯:
+     Eric Ries | 吴彤 | 中信出版社
+**** 笔记及摘录:
+     <2016-09-27 二>
+     「铁匠在啤酒中洒下眼泪，悲叹自己没有办法在铁路时代卖马掌，但是这并不会使他们的马掌更受
+     欢迎。那些学习变成机械师的铁匠才会保住自己的饭碗。」
+     
+     目标顾客--小范围实验--反馈修改--产品迭代--获得核心认知--高速增长
+
+     创业即是某种形式的管理。
+
+     所谓的新创企业就是在充满不确定的情况下，以开发新产品和新服务为目的而设立的个人机构。
+
+     为什么新创企业以惨败告终的情况比比皆是？
+     一是在于好的计划，可靠的战略和深入的市场分析造成的诱惑。
+     二是，当目睹运用传统管理方式无法摆脱困境后，一些创业者和投资人干脆就撒手不管，
+     回到想做就做、跟着感觉走的状态。
+
+     驾驶汽车和发射火箭的比喻
+**** 总结:
+
+** ideas today:
+*** 标靶屋
+    建立大学生个人网站集群，让他们有个人档案可供与他人以及公司交换，
+    同时在技能栏和成就栏设立强游戏性的奖励和社交对比机制。
+*** 基于反馈(提前设置信息反馈测试和渠道)的框架或单元
+* DATE <2016-10-16 日>
+** machine learning:                                          :data_analysis:
+*** 线性回归
+    回归(regression analysis)：确定变量之间相互依赖和变动的定量关系
+    线性回归：X_t = a + bt + ε_t
+    这里由正态密度函数和中心极限定理得到，如果因素已经被完整的涵盖到模型中，就会有：
+    ε_t = 0
+    所以最后有：X_t = a + bt
+    
+    误差是由于普因引起的，其取值必须服从正态分布；
+    如果不是说明误差项包含特殊原因，还有遗漏的显著因子未考虑到。
+    毕竟大数定律说明了只有随机事件的多次实验结果才会趋于稳定。
+
+    补：大数定律成立的条件比中心极限定理宽松，前者只需要一阶矩存在，而后者需要前两阶矩都存在。
+    因为条件更强，中心极限定理的结论也更强，大数定律只是证明几乎处处收敛，却没有指明收敛的速度，
+    而中心极限定理给出了收敛的极限分布和渐进方差。
+
+    重点误区：中心极限定理说的是，一定条件下样本均值的分布趋于正态，绝不是样本分布趋于正态。
+    举例就是一个国家人口体重，考虑一下这个国家都是机器人，而且只有100kg和50kg两种型号，哈哈哈。
+
+    问题#######条件正态性和非条件正态性的区别？和条件概率有关吗？
+
+    继续说线性回归模型
+    
+* DATE <2016-11-22 二>
+** boooksheet:
+*** DONE 思考致富 THINK AND GROW RICH :books:finance_and_market:none_tech:meta_learning:entrepreneurship:
+    CLOSED: [2016-12-11 日 15:09]
+    - State "DONE"       from "TODO"       [2016-12-11 日 15:09] \\
+      其他内容略读后发现比较片面和偏激，只能作为批判性的参考。
+    - State "TODO"       from ""           [2016-11-22 二 19:13] \\
+      覆盖个方面，讲解细致，但废话多一点，建议速读加选读。
+
+**** 资讯:
+     拿破仑.希尔(美) | 朱圆圆 | 湖南文艺出版社 
+**** 笔记及摘录:
+     <2016-11-22 二>
+     第十步，性转换的神秘
+     「爱、浪漫和性都是能够驱使人们达到成就巅峰的情绪。爱的作用犹如安全阀，它能确保身心平衡、宁静和做出建设性工作。
+     如果结合在一起，这三种情感就有可能将一个人提升至天才的地位。」
+     要点: 控制负面情绪，催生爱与平和的情感能量，冥想倾听潜意识。
+     评论: 这一节有些论点无法苟同，第一，负面情绪、性冲动和消极影响力的对应方式，不应该是使用毅力去控制和转化，
+     而因该是通过观察来消解，通过爱、平和等的其他情绪能量来引导。
+     第二，对两性结合的需求和绝对性有所夸大，追求圆满和自我证明的方式因人不同，不一定非要有伴侣才能成就圆满，
+     这一部分的论述错误的引导了读者，使我们多多少少忽略了自主完善个人精神世界的重要性。
+     
+     下一回，第三步和第七步
+**** 总结:
+     ASD
+* DATE <2016-12-30 五>
+** booksheet:
+*** DONE 活着
+    CLOSED: [2016-12-31 六 00:04]
+    - State "DONE"       from ""           [2016-12-31 六 00:04] \\
+      再是悲伤和困苦的生活，也有能让你幸福的瞬间和值得坚持的理由。
+**** 资讯:
+     余华 | 作家出版社
+**** 笔记及摘录:
+     「活着的意志是他身上唯一不能被夺走的东西.」--《时代》周刊2003.11.9
+     
+* DATE <2017-01-03 二>
+** booksheet:
+*** 既见君子
+**** 资讯:
+     张定浩 | 华东师范大学出版社
+**** 笔记及摘录:
+     <2017-01-03 二>
+    刚刚去世的物理大师惠勒有一句话，“要想了解一个新的领域的书”。我今天看到这句话的时候怔啦一下，
+    原来我对曹子建的写作就是这样的一种心境。
+**** 总结:
+* DATE <2017-01-05 四>
+** update中断错误解决                                                 :linux:
+   sudo rm /var/lib/apt/lists/lock
+   ps aux
+   sudo kill PID
+** 终端使用lantern方法                                                :linux:
+          打开蓝灯，终端下输入：
+
+       export http_proxy=http://127.0.0.1:8787
+
+       export https_proxy=http://127.0.0.1:8787
+
+ 
+
+   以前的老版本端口号为8787，现在最新的版本可能不是了，此时就要打开自己蓝灯页面设置 中的一项:
+
+           HTTP(S)代理服务器：127.0.0.1：端口号
+
+    查看自己的端口号，假设是 ：X
+
+      那此时就在终端下输入：
+
+           export http_proxy=http://127.0.0.1:X
+
+                  export https_proxy=http://127.0.0.1:X
+
+
+      用 curl google.com 测试下，不会出现连接被拒绝的情况
+
+      也可以将 这两行命令写入到  ~/.bashrc 文件中，这样就不用每次打开一个窗口，都要export 一下
+* DATE <2017-01-08 日>
+** machine learning:
+   MLIII CLASS 1
+   SVM: support vector machine
+   the explanation about Taylor equation:
+   [[https://www.zhihu.com/question/21149770]]
+   difference between RL and SL:
+   https://www.zhihu.com/question/41775291/answer/99169233
+   
+   频率学派：（矩估计/MLE/MaxEnt/EM等）
+   假定参数是某个/某些未知的定植，求这些参数如何取值，能够使得某目标取极值
+   贝叶斯学派：（贝叶斯模型）
+   假定参数本身是变化的，服从某个分布。求此分布约束下使得目标函数取得极值
+   
+   Posisson Distribution 泊松分布 与指数分布
+* DATE <2017-01-13 五>
+** booksheet
+*** TODO 心理控制方法                :daily:books:none_tech:entrepreneurship:
+    - State "TODO"       from ""           [2017-01-13 五 22:23] \\
+      变速调读，应该有些意料之外的收获.
+**** 资讯:
+     麦克思威尔 马尔茨(美) | 洪友 | 湖南文艺出版社 
+**** 笔记及摘录:
+     <2017-01-13 五>
+     Chapter7
+     「让人苦恼的并不是事情本身，而是他们对所发生的事的主观看法。」--古希腊哲学家爱比克泰德
+
+     心理控制理论的实质就是准确而冷静地、从而最终自动地将事实与假定、事实与看法、真实情况与放大
+     的障碍分离开，使我们的行动和反应牢固的建立再真相而不是自己或他人看法的基础之上。
+     
+     心理控制锻炼：
+     一周三次，每次30分钟，5分钟清空冥想，15分钟情绪充能，5分钟多视角分析，5分钟思维追溯
+     Chapter done
+**** 总结:
+*** 社会心理学
+**** 资讯:
+     戴维 迈尔斯(美) | 侯玉波等 | 人民邮电出版社
+**** 笔记及摘录:
+     <2017-01-13 五>
+     Chapter11 吸引与亲密关系
+     =？「正式因为人们渴望被接纳和被爱，所以才会再化妆品、服饰和塑身上有巨额花费」
+     
+     「被排斥的人，其大脑皮层的某个区域活动增加，而这部分脑区同样也是对躯体创伤作出反应的
+     脑区。和身体疼痛一样，排斥的社会性疼痛也会增加攻击性，伤心的感受还会表现为心率降低。」
+     
+     解释了接近性对友谊和爱的关键性影响，其中包括曝光效应。
+     
+**** 总结:
+* DATE <2017-01-24 二>
+** machine learning on udacity.com
+*** metods
+**** Decision Tree
+**** Naive Bayes Algorithm
+**** Gradient Descent
+**** Linear Regression
+**** Logistic Regression
+**** Support Vector Machine
+**** Neurol Network
+**** Kernel Method
+**** K-means Clustering
+**** Hierarchical Clustering
+
+*** About Jupyter:
+    offical website [[jupyter.org]]   
+    Why we use jupyter and whats on [[https://www.zhihu.com/question/37490497]]
+
+*** Introduction to Statistics:
+    
+    mode for which the frequency is highest(众数)
+    median for the value in the middle of the distribution(中位数)
+*** IQR and Outlier:
+    upper adjacent value = 75th percentile + (75th percentile – 25th percentile) * 1.5
+    lower adjacent value = 25th percentile – (75th percentile – 25th percentile) * 1.5
+    75th percentile = Q3
+    25th percentile = Q1
+    IQR = Q3 - Q1
+    
+*** Bessel's Correction
+    
+** machine learning for trading
+*** Data in CSV file
+    CSV stands for Comma Separated Values
+
+* DATE <2017-01-27 五>
+** about Anaconda:
+   download and installed, bash ....sh
+   
+   echo 'export PATH="~/anaconda2/bin:$PATH"' >> ~/.bashrc
+   source ~/.bashrc
+   
+   conda update conda
+   
+   ex:  conda create -n/-p my_env python=2.7 numpy pandas
+   source activate my_env
+   
+   conda env export  > enviroment.yaml
+
+   conda env create -f environment.yaml
+   
+   for the same fucation in pip, find out [[https://pip.pypa.io/en/stable/reference/pip_freeze/][pip freeze]]
+
+   conda env remove -n my_env
+
+** Jupyter Notebook:
+   [[http://jupyter-notebook.readthedocs.io/en/latest/index.html][Documentation here]] 
+   [[https://s3.cn-north-1.amazonaws.com.cn/u-img/dd1fe61e-27b1-46ce-8527-75760aac6a70][pic to describe]]
+
+   conda install jupyter notebook for installation.
+   
+   using Markdown to build with the form.
+   quick search can be found here:[[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet][Markdown Cheatsheet]]
+   
+   Press H the find the help of Keyboard shortcuts
+*** magic words:
+    [[http://blog.csdn.net/lixintong1992/article/details/51213546][blog material]]
+
+   % for magic words: [[http://ipython.readthedocs.io/en/stable/interactive/magics.html][magics]]
+   %magic for check magic words
+   %timeit for test the time costs
+   %pdb for debug  , pdb document: [[https://docs.python.org/3/library/pdb.html][pdb]]
+   
+   %matplotlib inline
+   %config InlineBackend.figure_format = 'retina'  
+   for inside datachart
+
+*** change into slides and show:
+    jupyter nbconvert notebook.ipynb --to slides --post serve
+
+* DATE <2017-01-31 二>
+** emacs org-mode 高亮显示:                                           :emacs:
+   (defface hi-red-b '((t (:foreground "#e50062"))) t)
+   (defun org-bold-highlight () 
+   (interactive) 
+   (hi-lock-mode) 
+   (highlight-regexp "[ \\t]\\(\\*\\(\\S-[^*]+\\S-\\|[^*]\\{1,2\\}\\)\\*\\)[ \\t\\n]*" 'hi-red-b))
+   (add-hook 'org-mode-hook 'org-bold-highlight)''' 
+* DATE <2017-02-01 三>
+** About Numpy and Pandas:
+*** DataFrame.dot()
+   df['points'] = df [ ['gold','silver','bronze'] ].dot([4, 2, 1])
+   olympic_points_df = df[ ['country_name','points'] ]
+*** DataFrame.select_dtypes()
+   #panda.DataFrame.select_dtypes(include = None, exclude = None)
+   this code will return a subset DataFrame including or excluding columns based on their dtype.
+   ex: df.select_dtypes(include = ['float64'])
+*** vectorized way
+    df.apply()
+    df['one_column'].map(lambda x:x>0)
+    df.applymap(lambda x:x>0)
+* DATE <2017-02-04 六>
+** python启动报错后重编译：
+   [[http://www.python.org][官方网站]] 下载后,
+   tar xvf Pythonxxxxxx
+   在目录中:
+   sudo ./configure --prefix==/usr/local/python27
+   sudo make
+   sudo make install
+   
+   修改ln指向:
+   sudo mv /usr/bin/pythonxxx /usr/bin/pythonxxx
+   ln -sf /usr/local/python27/bin/python /usr/bin/python
+** scikit-learn(sklearn) for ML:
+*** LabelEncoder
+    [[http://scikit-learn.org/stable/modules/preprocessing_targets.html#label-encoding][document_link]] 
+    The fit step seemed to find out how many labels in the list and what they are,
+    when the some data feed into the transform method, the return should be given as 
+    a list whose elements describle the label mark number for each element in the 
+    transforming list.
+    Or you can even use method: .inverse_transform() to make the label conding list transformed
+    into a classed data list.
+
+    ex:
+    >>> le = preprocessing.LabelEncoder()
+    >>> le.fit(["paris", "paris", "tokyo", "amsterdam"])
+    LabelEncoder()
+    >>> list(le.classes_)
+    ['amsterdam', 'paris', 'tokyo']
+    >>> le.transform(["tokyo", "tokyo", "paris"])
+    array([2, 2, 1])
+    >>> list(le.inverse_transform([2, 2, 1]))
+    ['tokyo', 'tokyo', 'paris']
+
+*** OneHotEncoder
+    [[http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html][link_1]]  [[http://scikit-learn.org/stable/modules/preprocessing.html#preprocessing-categorical-features][link_2]]
+    
+* DATE <2017-02-06 一>
+** emacs python-mode
+   [[http://codingpy.com/article/emacs-the-best-python-editor/][links]]
+   and see something in .emacs.d/init.el*
+* DATE <2017-02-09 四>
+** cross_validation in sklear
+* DATE <2017-02-10 五>
+** confusion matrix and macro-average
+    [[http://d0evi1.com/sklearn/model_evaluation/][estimator]]
+* DATE <2017-02-11 六>
+** bias and variance
+   bias for underfitting
+   vriance for over fitting
+* DATE <2017-02-14 二>
+** learning curve:
+   [[http://blog.csdn.net/ybdesire/article/details/53001400][ex. link here]]
+* DATE <2017-02-28 二>
+** two kinds of bias
+   restriction bias 限定偏好
+   representational power,set of hypotheses we will consider.
+   (选什么模型)
+
+   preference bias 优选偏好
+   algorithm's selection of one representation over another.
+   (怎么去优化)
+
+   inductive bias 归纳偏好
+* DATE <2017-03-04 六>
+** entropy and impurity in desecion trees
+   entropy = sum_of_i(-Pi*log2(Pi))
+   Pi for fraction of examples in class i
+
+** information gain
+   informatio gain = etropy(parent)-[weighted average]entropy(children)
+   decision tree: maximize information gain
+
+** perceptron training
+   --perceptron rule for threshold
+   --gradient descent/delta rule for unthreshold
+* DATE <2017-03-06 一>
+** SVM
+   the norm of the vector and matrix
+   what happend when the matrix divided by it's norm?
+   what is the geometric meaning of that?
+* DATE <2017-03-19 日>
+** LWR in KNN
+   locally weighted regression
+* DATE <2017-04-01 六>
+** 先后验与似然函数，似然估计
+     用“瓜熟蒂落”这个因果例子，从概率（probability）的角度说一下，
+
+     *先验概率*，就是常识、经验所透露出的“因”的概率，即瓜熟的概率。应该很清楚。
+
+     *后验概率*，就是在知道“果”之后，去推测“因”的概率，也就是说，如果已经知道瓜蒂脱落，
+     那么瓜熟的概率是多少。后验和先验 的关系可以通过贝叶斯公式来求。也就是：
+     P（瓜熟 | 已知蒂落）=P（瓜熟）×P（蒂落 | 瓜熟）/ P（蒂落）
+     
+     *似然函数*，是根据已知结果去推测固有性质的可能性（likelihood），是对固有性质的拟合程度，
+     所以不能称为概率。在这里就是说，不要管什么瓜熟的概率，只care瓜熟与蒂落的关系。如果蒂落了，
+     那么对瓜熟这一属性的拟合程度有多大。似然函数，一般写成L（瓜熟 | 已知蒂落），和后验概率非常像，
+     区别在于似然函数把瓜熟看成一个肯定存在的属性，而后验概率把瓜熟看成一个随机变量。
+
+
+     ---再扯一扯似然函数和条件概率的关系。
+     似然函数就是条件概率的逆反。意为：
+     L（瓜熟 | 已知蒂落）= C × P（蒂落 | 瓜熟），C是常数。
+     具体来说，现在有1000个瓜熟了，落了800个，那条件概率是0.8。那我也可以说，
+     这1000个瓜都熟的可能性是0.8C。注意，之所以加个常数项，是因为似然函数的具体值没有意义，
+     只有看它的相对大小或者两个似然值的比率才有意义，后面还有例子。
+     同理，如果理解上面的意义，分布就是一“串”概率。
+     
+     先验分布：现在常识不但告诉我们瓜熟的概率，
+     也说明了瓜青、瓜烂的概率后验分布：在知道蒂落之后，瓜青、瓜熟、瓜烂的概率都是多少似然函数：
+     在知道蒂落的情形下，如果以瓜青为必然属性，它的可能性是多少？如果以瓜熟为必然属性，
+     它的可能性是多少？如果以瓜烂为必然属性，它的可能性是多少？
+     似然函数不是分布，只是对上述三种情形下各自的可能性描述。那么我们把这三者结合起来，就可以得到：
+     后验分布 正比于 先验分布 × 似然函数。
+     先验就是设定一种情形，似然就是看这种情形下发生的可能性，两者合起来就是后验的概率。
+     至于似然估计：就是不管先验和后验那一套，只看似然函数，现在蒂落了，可能有瓜青、瓜熟、瓜烂，
+     这三种情况都有个似然值（L（瓜青）：0.6、L（瓜熟）：0.8、L（瓜烂）：0.7），
+     我们采用最大的那个，即瓜熟，这个时候假定瓜熟为必然属性是最有可能的。
+
+     [[https://zh.wikipedia.org/zh-cn/%E4%BC%BC%E7%84%B6%E5%87%BD%E6%95%B0][似然函数的维基百科]]
+     [[https://zh.wikipedia.org/wiki/%E6%9C%80%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1][最大似然估计]]
+** 自信息与互信息
+
+* DATE <2017-04-02 日>
+** 给jupyter notebook写一个批注插件
+* DATE <2017-04-21 五>
+** sublime_text3 installing and using
+    http://python.jobbole.com/81312/
+* DATE <2017-05-12 五>
+** new project record
+   衰老展示器
+* DATE <2017-06-01 四>
+** 神经网络与机器学习(大理石)
+*** 信息论学习模型
+    p300 不确定、惊奇和信息是相关的，当信息增益量I以2为底时，单位是bit。
+    -- 原来理解的是，bit是用来衡量数据或者是信息所占的大小，但没想到其实本质上是衡量一个事件出现的
+几率或者说其概率的大小。那个信息的出现是否是“有用”的，是否能给你充分的惊奇感。比如现我们输入的英文
+字符，它们的bit告诉我们的，不仅仅只是它占了多少内存和空间，还包括比如:a这个字符出现的信息增益量。
+a的出现在所有可能的字符中，出现的概率为其编码总数分之一，8位的二进制ASCII可以表示256种可能，所以
+-lg(1/256)=8,而8bit，正好是一个ASCII 字符所占的空间大小。
+    再者，信息量的大小不同于信息作用的大小，这不是同一概念。信息量只表明不确定性的减少程度，
+至于对接收者来说，所获得的信息可能事关重大，也可能无足轻重，这是信息作用的大小。
+* DATE <2017-06-03 六>
+** jQuery学习
+*** 选择器实例
+    |df|df|
+* DATE <2017-06-14 三>
+** collatz conjecture
+   link: http://www.bilibili.com/video/av9551751/

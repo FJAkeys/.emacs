@@ -1,0 +1,77 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/keys/ud120-projects/" . "final_project/")
+ ("/home/keys/.emacs.d/snippets/" . "org-mode/")
+ ("/home/" . "keys/")
+ ("/home/keys/.emacs.d/" . "plugins/")
+ ("/home/keys/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/keys/.emacs.d/"
+ "/home/keys/"
+ "/home/keys/notebook_for_bg/"
+ "/home/keys/nb_conda_kernels/"
+ "/home/keys/ud120-projects/final_project/"
+ "/home/keys/xiaolan/lans/app/"
+ "/home/keys/.emacs.d/snippets/org-mode/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "testemacsclisp.lisp"
+ "ac-comphist.dat"
+ "testelisp.el"
+ "test-org.org"
+ ".travis.yml"
+ "test.py"
+ "ns_test.py"
+ "regression.py"
+ "tester.py"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/keys/notebook_for_bg/" (22924 3707 678750 796000) "./" "Untitled1.ipynb" "Markdown-Syntax-CN/" "From meta to lisp.ipynb" "the_main_book.ipynb" "img/" "common-lisp的环境配置.ipynb" "Untitled2.ipynb" "ensemble_learning_random_data.py" "../" ".ipynb_checkpoints/" "Untitled.ipynb" "test-org.org" "Lisp_p&s.ipynb" "settings_of_emacs.ipynb" "ensemble_learning.ipynb")
+
+ ("/home/keys/.emacs.d/" (22921 55309 215668 32000) "ac-comphist.dat" "./" "elpa/" "ido.last" "#init.el#" "themes/" "backups/" ".#init.el" "places" "init.el~" "snippets/" "../" "plugins/" "auto-save-list/" "init.el")
+
+ ("/home/keys/" (22921 23326 74098 365000) "regression.py" ".continuum/" "./" ".mozilla/" ".astropy/" "图片/" ".pki/" "桌面/" "cl-jupyter/" "#testemacsclisp.lisp#" ".subversion/" "#foo#" "#testelisp.el#" ".gnupg/" ".pulse-cookie" ".gwhere/" ".xsession-errors" ".dbus/" "sublime-text-imfix/" "anaconda2/" ".git/" ".ssh/" ".sudo_as_admin_successful" ".steampid" ".macromedia/" "xiaolan/" ".gitconfig" ".slime-history.eld" "#ns_test.py#" ".dmrc" ".emacs.d/" ".compiz/" "README.md" "视频/" ".ipython/" "lispbox-0.7-ccl-1.6-linuxx86-64.tar.gz" "quicklisp.lisp" "quicklisp/" ".node_repl_history" "node_modules/" "trader_test/" "flask_build_test/" ".sbclrc" ".ICEauthority" "#.bashrc#" ".bash_logout" ".steampath" "lispbox-0.7/" ".pylint.d/" ".bash_history" "下载/" ".bashrc" ".npm/" ".#testemacsclisp.lisp" "文档/" "test.py" ".#regression.py" ".local/" "模板/" ".kivy/" "percol/" ".config/" "91581395308967175/" ".xsession-errors.old" "finding_donors/" "nb_conda_kernels/" ".mldonkey/" ".slime/" "sanhemenchuang/" ".Xauthority" ".conda/" ".Rhistory" ".aliedit/" "#regression.py#" ".profile" ".condarc" ".jupyter/" ".adobe/" "音乐/" ".lantern/" ".nano/" ".presage/" ".thunderbird/" ".byteexec/" "testemacsclisp.lisp" "../" ".steam/" ".ipynb_checkpoints/" ".percol.d/" ".fltk/" "Untitled.ipynb" ".wget-hsts" "boston_housing/" "公共的/" ".apport-ignore.xml" "notebook_for_bg/" "myblog/" "#test.py#" "ud120-projects/" ".nvm/" ".gphoto/" "quicklisp.lisp.asc" ".python_history" ".cache/" "R/" ".gconf/" ".w3m/" ".sbcl_history")
+
+ ("/home/keys/.emacs.d/plugins/" (22475 50498 106727 67000) "./" "../" "yasnippet/")
+
+ ("/home/keys/nb_conda_kernels/" (22882 11558 487357 473000) ".travis.yml" "./" "package.json" "Untitled1.ipynb" "sbin/" "appveyor.yml" "setup.py" ".git/" "README.md" "include/" "MANIFEST.in" "node_modules/" "npm-debug.log" "etc/" "conda-meta/" "ssl/" "share/" "translations/" "doc/" "nb_conda_kernels/" "LICENSE" "phrasebooks/" "requirements.txt" "bin/" "lib/" "qml/" "setup.cfg" "mkspecs/" "../" ".ipynb_checkpoints/" "Untitled.ipynb" "nb_conda_kernels.egg-info/" "plugins/" "var/" ".gitignore" "libexec/")
+
+ ("/home/keys/xiaolan/lans/app/" (22776 53343 348218 615000) "./" "views.pyc" "__init__.py" "templates/" "__init__.pyc" "../" "views.py" "static/")
+
+ ("/home/keys/lispbox-0.7/" (19789 42164 0 0) "./" "asdf-extensions.lisp" "slime-20110205.092829/" "quicklisp/" "ccl-1.6-linuxx86/" "asdf.lisp" "lispbox.sh" "../" "emacs-23.2/")
+
+ ("/home/keys/anaconda2/envs/" (22690 55293 481487 725000) "./" "mltb/" "my_env/" "../")
+
+ ("/home/keys/ud120-projects/final_project/" (22683 12687 471637 799000) "./" "final_project_dataset.pkl" "emails_by_address/" "poi_names.txt" "poi_email_addresses.py" "tester.py" "final_project_dataset_modified.pkl" "enron61702insiderpay.pdf" "../" "poi_id.py")
+
+ ("/home/keys/ud120-projects/" (22680 17208 92244 460000) "choose_your_own/" "./" "evaluation/" "feature_selection/" ".git/" "README.md" "text_learning/" "naive_bayes/" "datasets_questions/" "validation/" "regression/" "final_project/" "tools/" "k_means/" "../" "pca/" "outliers/" "decision_tree/" "svm/" ".gitignore")
+
+ ("/home/keys/.emacs.d/snippets/org-mode/" (22482 16797 571857 949000) "./" "Booksnippet" "*new snippet*" "../")
+
+ ("/home/keys/.emacs.d/snippets/" (22475 52207 222543 970000) "./" "lisp-interaction-mode/" "../" "org-mode/")
+
+ ("/home/keys/.emacs.d/plugins/yasnippet/" (22475 50515 167124 284000) ".travis.yml" "./" "yasnippet-debug.el" ".git/" "README.mdown" "yasnippet-tests.el" "doc/" "CONTRIBUTING.md" "yasnippet.el" "NEWS" "yasmate/" "Rakefile" "snippets/" "../" ".gitmodules" ".gitignore")
+
+ ("/home/keys/.emacs.d/plugins/yasnippet/snippets/" (22475 50519 599227 477000) "web-mode/" "antlr-mode/" "python-mode/" "./" "erlang-mode/" "nxml-mode/" "lua-mode/" "csharp-mode/" "go-mode/" "prog-mode/" "nesc-mode/" "rst-mode/" "js2-mode/" ".git" "js-mode/" "html-mode/" "nsis-mode/" "nix-mode/" "sh-mode/" "typerex-mode/" "udev-mode/" "README.md" "enh-ruby-mode/" "java-mode/" "perl-mode/" "cmake-mode/" "lisp-interaction-mode/" "m4-mode/" "f90-mode/" "ruby-mode/" "faust-mode/" "makefile-automake-mode/" "CONTRIBUTORS.txt" "makefile-gmake-mode/" "elixir-mode/" "js3-mode/" "chef-mode/" "scala-mode/" "rename_add_contr.py" "sql-mode/" "snippet-mode/" "conf-unix-mode/" "LICENSE" "git-commit-mode/" "markdown-mode/" "emacs-lisp-mode/" "tuareg-mode/" "c-mode/" "cperl-mode/" "clojure-mode/" "makefile-mode/" "cider-repl-mode/" "lisp-mode/" "malabar-mode/" "text-mode/" "dix-mode/" "../" "makefile-bsdmake-mode/" "octave-mode/" "latex-mode/" "applescript-mode/" "yaml-mode/" "org-mode/" "groovy-mode/" "css-mode/" "erc-mode/" "ensime-mode/" ".nosearch" "ned-mode/" "cpp-omnet-mode/" "c++-mode/" "fundamental-mode/" ".gitignore" "cc-mode/" "haskell-mode/")
+
+ ("/home/keys/.emacs.d/plugins/yasnippet/snippets/emacs-lisp-mode/" (22475 50519 579227 11000) "grabthing" "condition-case" "while" "progn" "directory-files" "make-local-variable" "if" "region-active-p" "rename-file" "./" "file-name-extension" "match-end" "mapcar" "setq" "copy-file" "match-beginning" "substring" "princ" "print" "nth" "re-search-forward" "search-forward-regexp" "replace-regexp-in-string" "apply" "kbd" "expand-file-name" "string=" "region-beginning" "delete-char" "lambda" "unless" "line-beginning-position" "string" "cons" "x-dired.process_marked" "list" "cond" "insert" "file-name-sans-extension" "x-find-replace" "goto-char" "x-file.read-lines" "insert-file-contents" "push" ".read_me" "let" "word_regexp" "error" "consp" "eq" "global-set-key" "defalias" "delete-directory" "widget-get" "funcall" "save-buffer" "buffer-modified-p" "defun" "x-word-or-region" "dolist" "skip-chars-forward" "file.process" "string-match" "autoload" "equal" "point" "require" "format" "add-hook" "null" "set" "find-replace" "x-grabthing" "match-string" "minor_mode" "set-file-modes" "ert-deftest" "make-directory" "point-max" "stringp" "delete-region" "defcustom" "const" "buffer-file-name" "search-backward" "concat" "string-to-number" "find-file" "memq" "word-or-region" "when" "file-name-directory" "or" "kill-buffer" "mapc" "re-search-backward" "put" "grabstring" "file-name-nondirectory" "repeat" "x-file.process" "assq" "split-string" "hash" "end-of-line" "append" "buffer-substring" "bounds-of-thing-at-point" "get" "looking-at" "delete-file" "x-traverse_dir" "copy-directory" "interactive" "not" "and" "skip-chars-backward" "current-buffer" "point-min" "dired.process_marked" "custom-autoload" "thing-at-point" "../" "defvar" "aref" "vector" "buffer-substring-no-properties" "backward-char" "cdr" "set-mark" "file-relative-name" "message" "defsubst" "should" "car" "search-backward-regexp" "region-end" "set-buffer" "number-to-string" "replace-regexp" "save-excursion" "forward-line" "forward-char" "line-end-position" "length" "function" "traverse_dir" "yes-or-no-p" "search-forward" "with-current-buffer" "beginning-of-line" "aset" "x-grabstring" "define-key" "file.read-lines" "fboundp")
+
+ ("/home/keys/.emacs.d/snippets/lisp-interaction-mode/" (22475 52207 234542 761000) "./" "*new snippet*" "../")
+
+ ("/home/keys/.emacs.d/auto-save-list/" (22473 8202 196504 251000) "./" ".saves-6223-keys-XPS-13-9350~" ".saves-675-keys-XPS-13-9350~" ".saves-3300-keys-XPS-13-9350~" "../")
+
+ ("/home/" (22429 8419 658872 114000) "./" "keys/" "../")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

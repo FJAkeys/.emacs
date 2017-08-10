@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>小蘭精選</title>
+
+    <!-- mapset -->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="static/css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">小蘭精選</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">关于</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">服务</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">商品</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#adr">地址</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>小蘭精選</h1>
+                <hr>
+		<p>欢迎光临，我们竭诚为您服务</br>爱时尚最爱旗袍，爱生活更爱工作！小蘭精選只为您打造完美白领新生活！</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Tell Me More</a>
+            </div>
+        </div>
+</header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">小兰同学要说的话在这里！</h2>
+                    <hr class="light">
+                    <p class="text-faded">对，就是这里，如果没有话说也行，我就把这个栏目删啦，换成其他的内容也可以。其实说说心路历程，讲讲这个店也好，不管怎么样，我是在这里胡言乱语凑字数的，哈哈哈！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">At Your Service</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-female wow bounceIn text-primary"></i>
+                        <h3>经典旗袍</h3>
+                        <p class="text-muted">古典的灵秀，献给今天的你</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-tags wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>时尚穿搭</h3>
+                        <p class="text-muted">最前沿的成衣，最时尚的搭配</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-pencil-square-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>量身定制</h3>
+                        <p class="text-muted">裁红点翠，铢量度寸，让她完美随身</p>
+                    </div>
+                </div>
+		<div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>创意活动</h3>
+                        <p class="text-muted">酷炫的手作体验，一起度过欢乐时光</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="static/img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    创意活动
+                                </div>
+                                <div class="project-name">
+                                    手作花篮
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="static/img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    时尚成衣
+                                </div>
+                                <div class="project-name">
+                                    黑白条纹外套
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="static/img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    时尚成衣
+                                </div>
+                                <div class="project-name">
+                                    纯色针织衫
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="static/img/portfolio/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    经典旗袍
+                                </div>
+                                <div class="project-name">
+                                    真丝印花定制款
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="static/img/portfolio/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    经典旗袍
+                                </div>
+                                <div class="project-name">
+                                    真丝印花定制款
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="static/img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    经典旗袍
+                                </div>
+                                <div class="project-name">
+                                    真丝印花定制款
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>为您精挑细选的华丽衣橱</h2>
+                <a href="#" class="btn btn-default btn-xl wow tada">查看更多</a>
+            </div>
+        </div>
+    </aside>
+
+
+    <section class="bg-primary" id="adr">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">我们在此恭候您的光临</h2>
+                    <hr class="light">
+                </div>
+		<div class="col-lg-3" id="map_canvas">
+			<div class="col-lg-6" style="width:550px;height:400px;" id="mapcontainer"></div>
+		    </div>
+  		<div class="col-lg-3 col-lg-offset-3">
+			<p>四川省 成都市</br>高新区 天府三街(与剑南大道交汇处)</br>保利星座3栋 15楼 1号</br>(居中或者放实际图片在下做引导)</p>
+		</div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">联系我们</h2>
+                    <hr class="primary">
+                    <p>资讯介绍，合作洽谈，售后服务，请联系这里: </p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-0 text-center">
+                    <i class="fa fa-phone fa-4x wow bounceIn"></i>
+                    <p>028-18080123820</p>
+                </div>
+		<div class="col-lg-4 text-center">
+                    <i class="fa fa-wechat fa-4x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p>ID: boutiquelan</br>点击扫码</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-4x wow bounceIn" data-wow-delay=".2s"></i>
+                    <p><a href="mailto:jakeys@foxmail.com">jakeys@foxmail.com</a></p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <span class="copyright">Copyright &copy;小蘭精選 Inc. code for Angela,by @Keys</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="static/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="static/js/jquery.easing.min.js"></script>
+    <script src="static/js/jquery.fittext.js"></script>
+    <script src="static/js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="static/js/creative.js"></script>
+
+
+<script type="text/javascript">
+var map = new BMap.Map("mapcontainer");    //地图容器
+
+var points = [                          //创建点
+    new BMap.Point(104.052003,30.55275)
+
+];
+var marker1 = new BMap.Marker(points[0]);   //创建标注
+
+map.addOverlay(marker1);                    //显示标注
+
+
+map.centerAndZoom(points[0], 18);                 // 初始化地图，设置中心点坐标和地图级别
+map.addControl(new BMap.NavigationControl());      //为地图添加鱼骨
+
+var label = new BMap.Label("小蘭精選",{position : points[0], offset: new BMap.Size(3,-6)});       //定义一个文字标签，注意1.2请用position
+map.addOverlay(label);
+
+marker1.addEventListener("click",function(){
+    map.setViewport(points);
+});
+
+</script>
+
+
+
+
+
+</body>
+
+</html>

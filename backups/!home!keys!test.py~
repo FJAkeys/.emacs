@@ -1,0 +1,9 @@
+
+
+a = 'aaa'
+b = 'bbb'run
+c = 'ccc'
+
+final = a + b + c
+
+print final

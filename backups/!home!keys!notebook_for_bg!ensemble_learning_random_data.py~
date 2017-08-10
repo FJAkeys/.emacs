@@ -1,0 +1,10 @@
+import random
+
+data_set_x = [random.uniform(1000,10000) for x in xrange(50)]
+
+data_set_x = sorted(data_set_x)
+
+data_set_y_t = [0.0000001*x*x*x-200*x-2000 for x in data_set_x]
+data_set_y = [random.uniform(y-500,y+500) for y in data_set_y_t]
+
+

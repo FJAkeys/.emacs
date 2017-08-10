@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: testsnippet123
+# key: testsnippet123
+
+# --
+(testsnippet123 var (body))

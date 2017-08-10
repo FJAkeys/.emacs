@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Booksnippet
+# key: Booksn
+# --
+*** ${1:title}
+**** 资讯:
+**** 笔记及摘录:
+**** 总结:

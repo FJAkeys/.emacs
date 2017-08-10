@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: src_insert_code_block
+# key: icblocksn
+# --
+#+BEGIN_SRC $1
+$2
+#END_SRC
+
+
